@@ -1,0 +1,22 @@
+button{
+    border-radius: 20px;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    height: 350px;
+    width: 350px ;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin: 5px;
+}
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#button1{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 100% , 50% 80%, 33% 100%, 0 100%);
+    background-color: red;
+}
+#button2{
+    background-color: blue;
+}

@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+#main, #answers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#answers:nth-child(3){
+  background-color: red;
+}
+#answer:nth-child(1){
+  background-color: blue;
+}
