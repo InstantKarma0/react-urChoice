@@ -1,21 +1,83 @@
-*{
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-  height: 100vh;
-  width: 100vw;
+body {
+	height: 100vh;
+	width: 100vw;
 }
-#main, #answers{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+#main, #answers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-#answers:nth-child(3){
-  background-color: red;
+
+#answers {
+	gap: 5px;
+	height: 660px;
+	width: 290px;
 }
-#answer:nth-child(1){
-  background-color: blue;
+
+#relative {
+	position: relative;
+}
+
+#or {
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 50px solid white;
+	transform: rotate(45deg);
+	z-index: 1;
+	border-radius: 30px;
+	top: -51.5px;
+	left: -45px;
+}
+
+#color {
+	position: absolute;
+	top: -35px;
+	left: -29px;
+	height: 70px;
+	width: 70px;
+	transform: rotate(45deg);
+	background: linear-gradient(225deg, #DC5ADF -26.52%, #E88BFF 123.74%);
+	border-radius: 20px;
+	z-index: 2;
+}
+
+#textOr {
+	position: absolute;
+	z-index: 2;
+	top: -18px;
+	left: -20px;
+	font-family: 'Red Hat Display', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	color: #F5F5F5;
+}
+
+.opacity {
+	opacity: 0.5;
+}
+
+h1 {
+	font-family: 'Permanent Marker', cursive;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 17px;
+	background: linear-gradient(92.02deg, #16083E 0%, #3F2195 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }

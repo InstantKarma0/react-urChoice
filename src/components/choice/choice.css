@@ -3,20 +3,26 @@ button{
     color: black;
     padding: 5px;
     font-size: 30px;
-    height: 350px;
-    width: 350px ;
+    height: 100%;
+    width: 100% ;
     border: 0;
     cursor: pointer;
     transition: 0.2s ease;
     margin: 5px;
+    z-index: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #F5F5F5;
 }
 button:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #button1{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 100% , 50% 80%, 33% 100%, 0 100%);
-    background-color: red;
+    background: linear-gradient(127.68deg, #DF5A72 0%, #FFAE8B 100%);
 }
 #button2{
-    background-color: blue;
+    background: linear-gradient(127.68deg, #8BEAFF 0%, #5A87DF 100%);
 }

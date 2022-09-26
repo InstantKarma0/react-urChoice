@@ -1,20 +1,10 @@
-import { Component } from "react";
+import { render } from '@testing-library/react';
 import './choice.css';
-class Choice extends Component{
-    constructor(props){
-        super(props);
 
-    }
-
-    validation(){
-        alert("Bravo, " + this.props.osef);
-    }
-
-    render(){
-        return(
-            <button id={this.props.id} onClick={() => this.props.click()}>{this.props.osef}</button>
-        )
-    }
+export function Choice(props){
+   
+    return(
+        <button id={props.id} onClick={props.showResults}>{props.text}</button>
+        
+    )
 }
-
-export default Choice;
